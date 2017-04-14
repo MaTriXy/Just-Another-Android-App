@@ -3,10 +3,16 @@
 Sample project that displays some images from the dribble API.
 Demonstrates some cool stuff that you can do with the modern libraries and tooling in Android these days.
 
+As someone said on reddit: "It's not over-engineered, it's just a skyscraper without the skyscraper part, just the foundations :)"
+
 
 ![Demo Screenshot][1]
 
-#### libraries
+### Newest additions:
+* Added a separate Timber logging tree for crashlytics. See com.example.tools.timber.CrashlyticsTree
+* Added automated unlocking the screen for espresso tests, check class com.example.util.EspressoTestRunner
+
+#### libraries:
 * RxJava
 * Dagger 2 with examples of assisted injection and different modules depending on build type
 * Retrofit 2 and Retrofit Mock mode for debug builds
@@ -20,8 +26,8 @@ Demonstrates some cool stuff that you can do with the modern libraries and tooli
 * Retrolambda
 * Stetho
 
-#### Static analysis
-* PMD
+#### Static analysis:
+* PMD (https://pmd.github.io/ - check file quality.gradle)
 * Checkstyle
 * Lint
 * Findbugs
@@ -29,15 +35,16 @@ Demonstrates some cool stuff that you can do with the modern libraries and tooli
 * A set of custom IDE inspection rules
 * A module with a sample custom lint rule
 
-#### Testing
+#### Testing:
 * Espresso tests with and without mock web server
 * Mock web server tests that loads responses from json files
 * Robolectric tests
 * Normal unit tests
 * Ok http interceptor for changing the base url in tests
 * Idling resources
+* Unlocking screen for Espresso tests (check class com.example.util.EspressoTestRunner)
 
-#### Other
+#### Other:
 * Separate app icons according to build type
 * Some advanced source sets configuration for splitting up tests
 * Loading some project config from property files in Android Manifest and build.gradle
@@ -49,10 +56,14 @@ Demonstrates some cool stuff that you can do with the modern libraries and tooli
 * Strict mode
 * Plugin to publish app on the playstore
 * Dex count plugin for counting the number of methods in the apk
+* Separate Timber logging tree for crashlytics. See com.example.tools.timber.CrashlyticsTree
 
- ..and all sorts of other goodies!
- Loads of things on the roadmap as well like:
- A debug drawer, a proper CI setup, screenshot automation, move to mixpanel, clean architecture etc..
+..and all sorts of other goodies!
+
+### Roadmap:
+ * Proper CI setup (probably Teamcity)
+ * Screenshot automation.
+ * A debug drawer
 
 Any feedback/pull request is welcome!
 You can catch me at www.sakiskaliakoudas.com
